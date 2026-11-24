@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --env-file=.env --watch src/server.ts",
+    "start": "deno run --allow-net --allow-env --env-file=.env src/server.ts",
+    "check": "deno check src/server.ts"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.2.2"
+  }
+}
